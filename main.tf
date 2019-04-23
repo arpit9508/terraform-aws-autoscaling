@@ -31,6 +31,7 @@ resource "aws_launch_configuration" "main" {
   user_data            = "${var.lc_user_data}"
   enable_monitoring    = "${var.lc_monitoring}"
   ebs_optimized        = "${var.lc_ebs_optimized}"
+  spot_price           = "${var.spot_price}"
 
   lifecycle {
     create_before_destroy = true
