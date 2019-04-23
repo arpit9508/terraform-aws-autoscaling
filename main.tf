@@ -18,6 +18,7 @@ module "random_lc" {
     lc_monitoring       = "${var.lc_monitoring}"
     lc_ebs_optimized    = "${var.lc_ebs_optimized}"
     lc_user_data        = "${var.lc_user_data}"
+    spot_price          = "${var.spot_price}"
   }
 }
 
